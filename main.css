@@ -1,14 +1,26 @@
-body, html {
+body,
+html {
   margin: 0;
+  font-family: Roboto Mono, sans-serif;
 }
 body,
 html,
-.wealth-wrapper-outer
-.wealth-row {
+.wealth-wrapper-outer .wealth-row {
   min-height: 100%;
+}
+body {
+  background: #222;
+  color: #eee;
 }
 .title-screen {
   width: 100vw;
+}
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  color: inherit;
 }
 h1 {
   text-align: center;
@@ -24,22 +36,10 @@ h1 {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding-top: 42px;
+  padding-top: 22px;
   padding-left: 48px;
 
   font-size: 30px;
-  color: #00000033;
-
-  background-image: url(img/right.svg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: 50px 40px;
-
-  animation-name: bouncy-arrow;
-  animation-delay: 0;
-  animation-iteration-count: infinite;
-  animation-direction: forward;
-  animation-duration: 3s;
 }
 @media (max-width: 450px) {
   .scroll-this-way {
@@ -47,16 +47,29 @@ h1 {
   }
 }
 @keyframes bouncy-arrow {
-  0% {background-position: 50px 40px;}
-  20% {background-position: 50px 40px;}
-  25% {background-position: 70px 40px;}
-  30% {background-position: 45px 40px;}
-  35% {background-position: 70px 40px;}
-  40% {background-position: 50px 40px;}
-  100% {background-position: 50px 40px;}
+  0% {
+    background-position: 50px 40px;
+  }
+  20% {
+    background-position: 50px 40px;
+  }
+  25% {
+    background-position: 70px 40px;
+  }
+  30% {
+    background-position: 45px 40px;
+  }
+  35% {
+    background-position: 70px 40px;
+  }
+  40% {
+    background-position: 50px 40px;
+  }
+  100% {
+    background-position: 50px 40px;
+  }
 }
 .wealth-wrapper-outer {
-  font-family: sans-serif;
   overflow: visible;
   display: inline-block;
 }
@@ -73,14 +86,13 @@ h1 {
   display: flex;
 }
 .navigation .button {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   width: 20px;
   display: block;
   height: 20px;
   border-radius: 100%;
   background-position: 5px;
   background-color: #d8d8d8;
-  box-shadow: inset 1px 6px 12px #e2e2e2, inset -1px -10px 5px #a9a9a9, 1px 2px 1px #797979;
   overflow: hidden;
   margin: 4px;
 }
@@ -110,7 +122,6 @@ h1 {
   line-height: 22px;
 }
 
-
 .wealth-row {
   display: inline-flex;
 }
@@ -119,10 +130,10 @@ h1 {
   margin-top: 5px;
 }
 .wealth-wrapper {
-  margin: 1em 3em;
+  margin: 5vh 15vh;
 }
 .wealth {
-  background-color: black;
+  background-color: white;
   align-items: center;
   display: flex;
 }
@@ -155,7 +166,6 @@ h1 {
   position: sticky;
   left: 0;
   margin-bottom: 5px;
-  color: black;
   margin-top: 0;
 }
 .text-infobox .title,
@@ -267,7 +277,7 @@ h1 {
 .median {
   width: 480px;
 }
-.median .wealth{
+.median .wealth {
   width: 7.94px;
   height: 7.94px;
 }
@@ -277,26 +287,26 @@ h1 {
 .million .wealth {
   width: 33.62px;
   height: 33.62px;
-  background-color: #4CAF50;
+  background-color: #9b8b5b77;
 }
 .billion .wealth {
   width: 2000px;
-  height: 500px;
-  background-color: #03A9F4;
+  height: 90vh;
+  background-color: #9b8b5b77;
 }
 .bezos .wealth {
   width: 278000px;
-  height: 500px;
-  background-color: orange;
+  height: 90vh;
+  background-color: #9b8b5b77;
 }
 .four-hundred .wealth {
   margin-left: 100px;
   width: 5920000px;
-  height: 500px;
-  background-color: #03A9F4;
+  height: 90vh;
+  background-color: #9b8b5b77;
 }
 .ruler {
-  background-image: url('img/ruler.svg');
+  background-image: url("img/ruler.svg");
   background-repeat: repeat-x;
   background-position: 0 470px;
 }
@@ -314,42 +324,38 @@ h1 {
   display: inline-block;
 }
 .bezos .key > span {
-  background-color: orange;
+  background-color: #9b8b5b77;
 }
 .four-hundred .key > span {
-  background-color: #03A9F4;
-}
-.shadow {
-  box-shadow: -3px 5px 10px;
+  background-color: #9b8b5b77;
 }
 .counter {
   align-self: flex-end;
   left: 10px;
+  font-size: 10px;
   position: sticky;
   transform: translate(0, 27px);
-  color: black;
-  padding: 5px;
 }
 .lifetime .square {
   width: 41.23px;
   height: 41.23px;
-  background-color: blue;
+  background-color: #9b8b5b77;
 }
 .healthcare .square {
   width: 4.96px;
   height: 4.96px;
-  background-color: blue;
+  background-color: #9b8b5b77;
 }
 .amazon-year .square {
   width: 5.4px;
   height: 5.4px;
-  background-color: blue;
+  background-color: #9b8b5b77;
 }
 .year-veteran .square {
   height: 400px;
   width: 1186px;
   margin-top: 5px;
-  background-color: #8BC34A;
+  background-color: #9b8b5b77;
 }
 .year-veteran .title {
   width: auto;
@@ -366,8 +372,8 @@ h1 {
 .year-chemo .square {
   height: 400px;
   width: 22500px;
-  background-color: #03A9F4;
-  border: 5px dashed #0078af;
+  background-color: #9b8b5b77;
+  border: 5px dashed #9b8b5b77;
   box-sizing: border-box;
 }
 .year-chemo .square .title {
@@ -380,7 +386,7 @@ h1 {
   top: 310px;
 }
 .year-chemo .key > span {
-  background-color: #03A9F4;
+  background-color: #9b8b5b77;
 }
 .celebrities {
   display: flex;
@@ -389,32 +395,32 @@ h1 {
 .beyonce .square {
   height: 350px;
   width: 1142px;
-  background-color: #406994;
+  background-color: #9b8b5b77;
 }
 .goldman .square {
   width: 223px;
   height: 223px;
-  background-color: #64A8F0;
+  background-color: #9b8b5b77;
 }
 .tim-cook .square {
   width: 1785px;
   height: 350px;
-  background-color: #71889e;
+  background-color: #9b8b5b77;
 }
 .doctor .square {
   width: 81.8px;
   height: 81.8px;
-  background-color: #0661b9;
+  background-color: #9b8b5b77;
 }
 .lawyer .square {
   width: 63.2px;
   height: 63.2px;
-  background-color: #00478a;
+  background-color: #9b8b5b77;
 }
 .hedgefund .square {
   width: 289.8px;
   height: 289.8px;
-  background-color: #9daebf;
+  background-color: #9b8b5b77;
 }
 .line-chart .chart-outer {
   width: 720px;
@@ -425,10 +431,6 @@ h1 {
   height: 200px;
   overflow: hidden;
   margin-bottom: 5px;
-}
-.zoom.line-chart .chart-inner {
-  transition: box-shadow .8s;
-  box-shadow: inset 0 0 10px #00000042;
 }
 .zoom.line-chart svg {
   transition: all 1.5s;
@@ -474,7 +476,7 @@ h1 {
   max-width: 390px;
 }
 .people {
-  background-image: url('img/person.svg');
+  background-image: url("img/person.svg");
   background-size: 20px;
 }
 .people.first {
@@ -499,13 +501,9 @@ h1 {
   width: 800px;
   height: 197400px;
 }
-.sixty-percent-people .people-wrapper {
-  box-shadow: inset 0 0 10px #000000;
-}
 .bubble {
   border-radius: 10px;
   font-weight: bold;
-  box-shadow: 4px 4px 5px;
   font-size: 28px;
   background-color: white;
   text-align: center;
@@ -535,7 +533,6 @@ h1 {
   font-weight: bold;
   display: inline-block;
   border-radius: 10px;
-  box-shadow: 4px 4px 5px;
   padding: 10px;
   position: -webkit-sticky;
   position: sticky;
@@ -552,8 +549,8 @@ h1 {
     height: 400px;
   }
   .four-hundred-people .people {
-      width: 200px;
-      height: 400px;
+    width: 200px;
+    height: 400px;
   }
   .sixty-percent-people .people {
     width: 200px;
@@ -590,11 +587,11 @@ h1 {
   width: 300px;
   height: 300px;
   transform: rotate(-50deg);
-  background: yellowgreen;
+  background: #9b8b5b77;
   border-radius: 50%;
 }
 .piechart .piechart-inner {
-  fill: yellowgreen;
+  fill: #9b8b5b77;
   stroke: #655;
   stroke-width: 32;
 }
@@ -626,7 +623,7 @@ h1 {
   transform: rotate(-34deg);
 }
 .four-tenths-percent .piechart-inner {
-  stroke-dasharray: .4 100;
+  stroke-dasharray: 0.4 100;
 }
 .three-percent .piechart-inner {
   stroke-dasharray: 3 100;
@@ -668,7 +665,7 @@ h1 {
 }
 .about {
   visibility: hidden;
-  transition: opacity .7s;
+  transition: opacity 0.7s;
   opacity: 0;
   position: fixed;
   top: 0;
@@ -690,7 +687,7 @@ h1 {
   height: 0;
   width: 0;
   overflow: scroll;
-  transition: height .7s, width .7s;
+  transition: height 0.7s, width 0.7s;
   background-color: white;
 }
 .modal-text {
@@ -710,7 +707,6 @@ h1 {
   background-image: url(img/baby.svg);
 }
 .malaria .babies-wrapper {
-  box-shadow: inset 0 0 10px #00000042;
   width: 800px;
   height: 320px;
   overflow: scroll;
@@ -752,7 +748,7 @@ h1 {
 .ebola-bar .square {
   height: 122px;
   width: 122px;
-  background-color: #00bb42;
+  background-color: #9b8b5b77;
 }
 .corona-bar .title,
 .malaria-bar .title {
@@ -764,7 +760,7 @@ h1 {
 .malaria-bar .square {
   height: 400px;
   width: 337px;
-  background-color: #66c35a;
+  background-color: #9b8b5b77;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -772,7 +768,7 @@ h1 {
 .corona-bar .square {
   height: 400px;
   width: 500px;
-  background-color: green;
+  background-color: #9b8b5b77;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -780,7 +776,6 @@ h1 {
 .corona-bar,
 .malaria-bar,
 .ebola-bar {
-  color: black;
   margin: 50px;
   padding: 15px;
   box-sizing: border-box;
